@@ -1,0 +1,189 @@
+@media (max-width: 1200px) {
+    .container, 
+    .container-flex {
+        width: 85%;
+    }
+}
+
+@media (max-width: 992px) {
+    .service .upper1 {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .service .upper,
+    .service-img {
+        width: 100%;
+    }
+    
+    .service-img {
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    .contact .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .container-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav img {
+        width: 80px;
+    }
+    
+    .nav-links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .service h1 {
+        font-size: 36px;
+    }
+    
+    .service span {
+        font-size: 28px;
+    }
+    
+    .work .tab-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Mobile portrait */
+    .service h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+    
+    .service .icons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .service .lower {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .stat-item {
+        min-width: 100%;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tab-buttons {
+        transform: translateX(0);
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .tab-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .contact-form {
+        padding: 30px 20px;
+    }
+    
+    .contact-info li {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .inner-text {
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 32px;
+    }
+    
+    .nav-links ul {
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        font-size: 14px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-icon {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+}
+
+@media (max-height: 700px) and (orientation: portrait) {
+    .service .container,
+    .work .container,
+    .skills .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+    .service-img img {
+        max-width: 300px;
+    }
+    
+    .nav-links ul {
+        gap: 10px;
+    }
+}
+
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .container {
+        width: 100% !important;
+        padding: 20px !important;
+    }
+    
+    a {
+        color: #000 !important;
+    }
+    
+    .gradient-text {
+        -webkit-text-fill-color: black !important;
+        background-image: none !important;
+    }
+    
+    .contact-form,
+    .contact-info {
+        break-inside: avoid;
+    }
+}
